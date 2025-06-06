@@ -10,8 +10,8 @@ stages:
     - task: Kubernetes@1
       inputs:
         connectionType: 'Kubernetes Service Connection'
-        #azureSubscription: 'k8sconnection'
-        kubernetesServiceEndpoint: 'k8sconnection'
+        #azureSubscription: 'k8s'
+        kubernetesServiceEndpoint: 'k8s'
         azureResourceGroup: 'dev-env5'
         kubernetesCluster: 'dev-cluster5'
         namespace: 'three-tier'
