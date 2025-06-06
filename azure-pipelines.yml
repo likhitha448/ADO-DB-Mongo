@@ -1,5 +1,5 @@
 pool:
-  name: 'rollout'
+  name: 'pool5'
 
 stages:
 - stage: Deploy
@@ -12,8 +12,8 @@ stages:
         connectionType: 'Kubernetes Service Connection'
         #azureSubscription: 'k8sconnection'
         kubernetesServiceEndpoint: 'k8sconnection'
-        azureResourceGroup: 'dev-env'
-        kubernetesCluster: 'dev-cluster'
+        azureResourceGroup: 'dev-env5'
+        kubernetesCluster: 'dev-cluster5'
         namespace: 'three-tier'
         command: 'apply'
         arguments: '-f DB/database.yml'
