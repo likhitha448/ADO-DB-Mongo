@@ -1,5 +1,5 @@
 pool:
-  name: 'azuredevops'
+  name: 'azurepool'
 
 stages:
 - stage: Deploy
@@ -12,7 +12,7 @@ stages:
         connectionType: 'Kubernetes Service Connection'
         #azureSubscription: 'k8s'
         kubernetesServiceEndpoint: 'k8s'
-        azureResourceGroup: 'dev-env01'
+        azureResourceGroup: 'devops01'
         kubernetesCluster: 'dev-cluster1'
         namespace: 'three-tier'
         command: 'apply'
