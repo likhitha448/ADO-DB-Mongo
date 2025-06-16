@@ -1,5 +1,5 @@
 pool:
-  name: 'azurepool'
+  name: 'azuredevops'
 
 stages:
 - stage: Deploy
